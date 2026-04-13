@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">洗濯機タイマー</string>
+    <string name="current_time_label">現在時刻：</string>
+    <string name="finish_time_label">希望終了時刻：</string>
+    <string name="wash_duration_label">洗濯時間を設定：</string>
+    <string name="start_time_label">洗濯機の起動時刻：</string>
+    <string name="hours_short_label">時間</string>
+    <string name="minutes_short_label">分</string>
+    <string name="invalid_duration_message">洗濯時間を1分以上に設定してください。</string>
+    <string name="finish_time_in_past_message">選択した終了時刻は過去です。</string>
+    <string name="insufficient_time_message">洗濯時間が残り時間を超えています。</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="app_version_footer">洗濯機タイマー v%1$s</string>
+    <string name="settings_button_description">設定を開く</string>
+    <string name="settings_dialog_title">設定</string>
+    <string name="settings_language_label">言語</string>
+    <string name="settings_theme_label">テーマ</string>
+    <string name="settings_language_system_default">システムデフォルト</string>
+    <string name="settings_theme_system_default">システムデフォルト</string>
+    <string name="settings_theme_light">ライト</string>
+    <string name="settings_theme_dark">ダーク</string>
+    <string name="tab_wash_calculator">洗濯時間計算</string>
+    <string name="tab_wash_settings">洗濯時間設定</string>
+    <string name="program_label">洗濯コース:</string>
+    <string name="default_finish_time_label">希望終了時刻:</string>
+    <string name="default_program_label">既定の洗濯コース:</string>
+    <string name="smart_recommendations_label">スマート提案</string>
+    <string name="smart_recommendations_description">終了時刻と保存した設定に基づいて洗濯コースと所要時間を提案します。</string>
+    <string name="program_durations_label">コース時間設定:</string>
+    <string name="smart_recommendation_message">提案: %1$s、%2$s</string>
+    <string name="apply_recommendation_button">提案を使用</string>
+    <string name="smart_recommendation_fits_finish_time">選択した終了時刻までの残り時間に収まります。</string>
+    <string name="smart_recommendation_time_is_tight">時間が短いため、最も速く適したコースを選びます。</string>
+    <string name="smart_recommendation_matches_routine">保存した終了時刻の習慣と既定のコースに合っています。</string>
+    <string name="smart_recommendation_uses_time_well">余裕を残しつつ使える時間をうまく活用します。</string>
+    <string name="program_standard">標準</string>
+    <string name="program_quick">短時間</string>
+    <string name="program_eco">エコ</string>
+    <string name="program_cotton">綿</string>
+    <string name="program_delicates">デリケート</string>
+</resources>

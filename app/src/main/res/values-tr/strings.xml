@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Çamaşır Makinesi Zamanlayıcısı</string>
+    <string name="current_time_label">Şu anki saat:</string>
+    <string name="finish_time_label">İstenen bitiş zamanı:</string>
+    <string name="wash_duration_label">Yıkama süresini ayarla:</string>
+    <string name="start_time_label">Çamaşır makinesini başlat:</string>
+    <string name="hours_short_label">sa</string>
+    <string name="minutes_short_label">dk</string>
+    <string name="invalid_duration_message">Lütfen en az 1 dakika yıkama süresi ayarlayın.</string>
+    <string name="finish_time_in_past_message">Seçilen bitiş zamanı geçmişte.</string>
+    <string name="insufficient_time_message">Yıkama süresi kalan zamanı aşıyor.</string>
+    <string name="confirm">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="app_version_footer">Çamaşır Makinesi Zamanlayıcısı v%1$s</string>
+    <string name="settings_button_description">Ayarları aç</string>
+    <string name="settings_dialog_title">Ayarlar</string>
+    <string name="settings_language_label">Dil</string>
+    <string name="settings_theme_label">Tema</string>
+    <string name="settings_language_system_default">Sistem varsayılanı</string>
+    <string name="settings_theme_system_default">Sistem varsayılanı</string>
+    <string name="settings_theme_light">Açık</string>
+    <string name="settings_theme_dark">Koyu</string>
+    <string name="tab_wash_calculator">Yıkama süresi hesaplayıcı</string>
+    <string name="tab_wash_settings">Yıkama ayarları</string>
+    <string name="program_label">Yıkama programı:</string>
+    <string name="default_finish_time_label">Tercih edilen bitiş saati:</string>
+    <string name="default_program_label">Varsayılan yıkama programı:</string>
+    <string name="smart_recommendations_label">Akıllı öneriler</string>
+    <string name="smart_recommendations_description">Bitiş saatine ve kayıtlı varsayılanlara göre bir yıkama programı ve süre önerir.</string>
+    <string name="program_durations_label">Yıkama programı süreleri:</string>
+    <string name="smart_recommendation_message">Öneri: %1$s, %2$s</string>
+    <string name="apply_recommendation_button">Öneriyi kullan</string>
+    <string name="smart_recommendation_fits_finish_time">Seçilen bitiş saatine kadar kalan süreye sığar.</string>
+    <string name="smart_recommendation_time_is_tight">Zaman aralığı kısa olduğu için uygun olan en hızlı programı seçer.</string>
+    <string name="smart_recommendation_matches_routine">Kayıtlı bitiş rutininizle ve tercih ettiğiniz varsayılan programla eşleşir.</string>
+    <string name="smart_recommendation_uses_time_well">Kullanılabilir süreyi fazla sıkıştırmadan iyi değerlendirir.</string>
+    <string name="program_standard">Standart</string>
+    <string name="program_quick">Hızlı</string>
+    <string name="program_eco">Eko</string>
+    <string name="program_cotton">Pamuklu</string>
+    <string name="program_delicates">Hassas</string>
+</resources>

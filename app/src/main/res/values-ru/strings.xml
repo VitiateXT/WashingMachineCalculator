@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Таймер стиральной машины</string>
+    <string name="current_time_label">Текущее время:</string>
+    <string name="finish_time_label">Желаемое время окончания:</string>
+    <string name="wash_duration_label">Длительность стирки:</string>
+    <string name="start_time_label">Запустить стиральную машину в:</string>
+    <string name="hours_short_label">ч</string>
+    <string name="minutes_short_label">мин</string>
+    <string name="invalid_duration_message">Пожалуйста, установите длительность стирки не менее 1 минуты.</string>
+    <string name="finish_time_in_past_message">Выбранное время окончания находится в прошлом.</string>
+    <string name="insufficient_time_message">Длительность стирки превышает оставшееся время.</string>
+    <string name="confirm">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="app_version_footer">Таймер стиральной машины v%1$s</string>
+    <string name="settings_button_description">Открыть настройки</string>
+    <string name="settings_dialog_title">Настройки</string>
+    <string name="settings_language_label">Язык</string>
+    <string name="settings_theme_label">Тема</string>
+    <string name="settings_language_system_default">По умолчанию</string>
+    <string name="settings_theme_system_default">По умолчанию</string>
+    <string name="settings_theme_light">Светлая</string>
+    <string name="settings_theme_dark">Тёмная</string>
+    <string name="tab_wash_calculator">Калькулятор времени стирки</string>
+    <string name="tab_wash_settings">Настройки стирки</string>
+    <string name="program_label">Программа стирки:</string>
+    <string name="default_finish_time_label">Предпочтительное время окончания:</string>
+    <string name="default_program_label">Программа стирки по умолчанию:</string>
+    <string name="smart_recommendations_label">Умные рекомендации</string>
+    <string name="smart_recommendations_description">Предлагает программу стирки и длительность на основе времени окончания и сохранённых настроек.</string>
+    <string name="program_durations_label">Длительности программ стирки:</string>
+    <string name="smart_recommendation_message">Рекомендация: %1$s, %2$s</string>
+    <string name="apply_recommendation_button">Применить рекомендацию</string>
+    <string name="smart_recommendation_fits_finish_time">Укладывается в оставшееся время до выбранного окончания.</string>
+    <string name="smart_recommendation_time_is_tight">Выбирает самую быструю подходящую программу, потому что времени мало.</string>
+    <string name="smart_recommendation_matches_routine">Соответствует вашей сохранённой привычной схеме завершения и предпочитаемой программе по умолчанию.</string>
+    <string name="smart_recommendation_uses_time_well">Хорошо использует доступное время, не делая график слишком плотным.</string>
+    <string name="program_standard">Стандарт</string>
+    <string name="program_quick">Быстрая</string>
+    <string name="program_eco">Эко</string>
+    <string name="program_cotton">Хлопок</string>
+    <string name="program_delicates">Деликатная</string>
+</resources>

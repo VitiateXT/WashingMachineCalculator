@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wasmachine Timer</string>
+    <string name="current_time_label">Huidige tijd:</string>
+    <string name="finish_time_label">Gewenste eindtijd:</string>
+    <string name="wash_duration_label">Wasprogramma instellen:</string>
+    <string name="start_time_label">Wasmachine starten om:</string>
+    <string name="hours_short_label">u</string>
+    <string name="minutes_short_label">min</string>
+    <string name="invalid_duration_message">Stel een wasduur in van minimaal 1 minuut.</string>
+    <string name="finish_time_in_past_message">De geselecteerde eindtijd ligt in het verleden.</string>
+    <string name="insufficient_time_message">De wasduur overschrijdt de resterende tijd.</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Annuleren</string>
+    <string name="app_version_footer">Wasmachine Timer v%1$s</string>
+    <string name="settings_button_description">Instellingen openen</string>
+    <string name="settings_dialog_title">Instellingen</string>
+    <string name="settings_language_label">Taal</string>
+    <string name="settings_theme_label">Thema</string>
+    <string name="settings_language_system_default">Systeemstandaard</string>
+    <string name="settings_theme_system_default">Systeemstandaard</string>
+    <string name="settings_theme_light">Licht</string>
+    <string name="settings_theme_dark">Donker</string>
+    <string name="tab_wash_calculator">Wastijdcalculator</string>
+    <string name="tab_wash_settings">Wasinstellingen</string>
+    <string name="program_label">Wasprogramma:</string>
+    <string name="default_finish_time_label">Voorkeurs-eindtijd:</string>
+    <string name="default_program_label">Standaard wasprogramma:</string>
+    <string name="smart_recommendations_label">Slimme suggesties</string>
+    <string name="smart_recommendations_description">Stelt een wasprogramma en duur voor op basis van je eindtijd en opgeslagen voorkeuren.</string>
+    <string name="program_durations_label">Duur van wasprogramma\'s:</string>
+    <string name="smart_recommendation_message">Suggestie: %1$s met %2$s</string>
+    <string name="apply_recommendation_button">Suggestie gebruiken</string>
+    <string name="smart_recommendation_fits_finish_time">Past binnen de resterende tijd tot de gekozen eindtijd.</string>
+    <string name="smart_recommendation_time_is_tight">Kiest het snelste passende programma omdat er weinig tijd is.</string>
+    <string name="smart_recommendation_matches_routine">Past bij je opgeslagen eindtijdroutine en het voorkeursprogramma.</string>
+    <string name="smart_recommendation_uses_time_well">Benut de beschikbare tijd goed zonder te krap te worden.</string>
+    <string name="program_standard">Standaard</string>
+    <string name="program_quick">Snel</string>
+    <string name="program_eco">Eco</string>
+    <string name="program_cotton">Katoen</string>
+    <string name="program_delicates">Fijne was</string>
+</resources>

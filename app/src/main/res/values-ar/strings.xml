@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مؤقت الغسالة</string>
+    <string name="current_time_label">الوقت الحالي:</string>
+    <string name="finish_time_label">وقت الانتهاء المطلوب:</string>
+    <string name="wash_duration_label">ضبط مدة الغسيل:</string>
+    <string name="start_time_label">تشغيل الغسالة في:</string>
+    <string name="hours_short_label">س</string>
+    <string name="minutes_short_label">د</string>
+    <string name="invalid_duration_message">يرجى ضبط مدة غسيل لا تقل عن دقيقة واحدة.</string>
+    <string name="finish_time_in_past_message">وقت الانتهاء المحدد في الماضي.</string>
+    <string name="insufficient_time_message">مدة الغسيل تتجاوز الوقت المتبقي.</string>
+    <string name="confirm">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="app_version_footer">مؤقت الغسالة v%1$s</string>
+    <string name="settings_button_description">فتح الإعدادات</string>
+    <string name="settings_dialog_title">الإعدادات</string>
+    <string name="settings_language_label">اللغة</string>
+    <string name="settings_theme_label">المظهر</string>
+    <string name="settings_language_system_default">افتراضي النظام</string>
+    <string name="settings_theme_system_default">افتراضي النظام</string>
+    <string name="settings_theme_light">فاتح</string>
+    <string name="settings_theme_dark">داكن</string>
+    <string name="tab_wash_calculator">حاسبة وقت الغسيل</string>
+    <string name="tab_wash_settings">إعدادات وقت الغسيل</string>
+    <string name="program_label">برنامج الغسيل:</string>
+    <string name="default_finish_time_label">وقت الانتهاء المفضل:</string>
+    <string name="default_program_label">برنامج الغسيل الافتراضي:</string>
+    <string name="smart_recommendations_label">اقتراحات ذكية</string>
+    <string name="smart_recommendations_description">يقترح برنامج غسيل ومدة بناءً على وقت الانتهاء والإعدادات المحفوظة.</string>
+    <string name="program_durations_label">مدد برامج الغسيل:</string>
+    <string name="smart_recommendation_message">اقتراح: %1$s مع %2$s</string>
+    <string name="apply_recommendation_button">استخدام الاقتراح</string>
+    <string name="smart_recommendation_fits_finish_time">يلائم الوقت المتبقي قبل وقت الانتهاء المحدد.</string>
+    <string name="smart_recommendation_time_is_tight">يختار أسرع برنامج مناسب لأن الفترة الزمنية قصيرة.</string>
+    <string name="smart_recommendation_matches_routine">يتوافق مع روتين وقت الانتهاء المحفوظ والبرنامج الافتراضي المفضل لديك.</string>
+    <string name="smart_recommendation_uses_time_well">يستفيد من الوقت المتاح جيدًا من دون أن يصبح ضيقًا جدًا.</string>
+    <string name="program_standard">عادي</string>
+    <string name="program_quick">سريع</string>
+    <string name="program_eco">اقتصادي</string>
+    <string name="program_cotton">قطن</string>
+    <string name="program_delicates">أقمشة رقيقة</string>
+</resources>

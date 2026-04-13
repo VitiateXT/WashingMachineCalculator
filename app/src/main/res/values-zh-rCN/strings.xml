@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">洗衣机计时器</string>
+    <string name="current_time_label">当前时间：</string>
+    <string name="finish_time_label">期望完成时间：</string>
+    <string name="wash_duration_label">设置洗涤时长：</string>
+    <string name="start_time_label">洗衣机启动时间：</string>
+    <string name="hours_short_label">时</string>
+    <string name="minutes_short_label">分</string>
+    <string name="invalid_duration_message">请设置至少1分钟的洗涤时长。</string>
+    <string name="finish_time_in_past_message">所选完成时间已过去。</string>
+    <string name="insufficient_time_message">洗涤时长超过剩余时间。</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="app_version_footer">洗衣机计时器 v%1$s</string>
+    <string name="settings_button_description">打开设置</string>
+    <string name="settings_dialog_title">设置</string>
+    <string name="settings_language_label">语言</string>
+    <string name="settings_theme_label">主题</string>
+    <string name="settings_language_system_default">系统默认</string>
+    <string name="settings_theme_system_default">系统默认</string>
+    <string name="settings_theme_light">浅色</string>
+    <string name="settings_theme_dark">深色</string>
+    <string name="tab_wash_calculator">洗衣时间计算器</string>
+    <string name="tab_wash_settings">洗衣时间设置</string>
+    <string name="program_label">洗衣程序：</string>
+    <string name="default_finish_time_label">首选结束时间：</string>
+    <string name="default_program_label">默认洗衣程序：</string>
+    <string name="smart_recommendations_label">智能建议</string>
+    <string name="smart_recommendations_description">根据结束时间和已保存的默认设置建议洗衣程序和时长。</string>
+    <string name="program_durations_label">各洗衣程序时长：</string>
+    <string name="smart_recommendation_message">建议：%1$s，%2$s</string>
+    <string name="apply_recommendation_button">使用建议</string>
+    <string name="smart_recommendation_fits_finish_time">能赶在所选结束时间之前完成。</string>
+    <string name="smart_recommendation_time_is_tight">因为时间窗口较短，所以选择最快且合适的程序。</string>
+    <string name="smart_recommendation_matches_routine">与您保存的结束时间习惯和默认程序相匹配。</string>
+    <string name="smart_recommendation_uses_time_well">能较好利用可用时间，又不会过于紧张。</string>
+    <string name="program_standard">标准</string>
+    <string name="program_quick">快速</string>
+    <string name="program_eco">节能</string>
+    <string name="program_cotton">棉织物</string>
+    <string name="program_delicates">轻柔</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Washing Machine Timer</string>
+    <string name="current_time_label">Current time:</string>
+    <string name="finish_time_label">Desired finish time:</string>
+    <string name="tab_wash_calculator">Wash Time Calculator</string>
+    <string name="tab_wash_settings">Wash Time Settings</string>
+    <string name="program_label">Washing program:</string>
+    <string name="wash_duration_label">Set wash duration:</string>
+    <string name="default_finish_time_label">Preferred finish time:</string>
+    <string name="default_program_label">Default washing program:</string>
+    <string name="smart_recommendations_label">Smart suggestions</string>
+    <string name="smart_recommendations_description">Suggest a washing program and duration based on your finish time and saved defaults.</string>
+    <string name="program_durations_label">Washing program durations:</string>
+    <string name="smart_recommendation_message">Suggested: %1$s with %2$s</string>
+    <string name="apply_recommendation_button">Use suggestion</string>
+    <string name="smart_recommendation_fits_finish_time">Fits into the remaining time before your selected finish.</string>
+    <string name="smart_recommendation_time_is_tight">Chooses the quickest suitable program because the time window is short.</string>
+    <string name="smart_recommendation_matches_routine">Matches your saved finish-time routine and preferred default program.</string>
+    <string name="smart_recommendation_uses_time_well">Uses the available time well without cutting it too close.</string>
+    <string name="start_time_label">Start washing machine at:</string>
+    <string name="hours_short_label">h</string>
+    <string name="minutes_short_label">min</string>
+    <string name="program_standard">Standard</string>
+    <string name="program_quick">Quick</string>
+    <string name="program_eco">Eco</string>
+    <string name="program_cotton">Cotton</string>
+    <string name="program_delicates">Delicates</string>
+    <string name="invalid_duration_message">Please set a wash duration of at least 1 minute.</string>
+    <string name="finish_time_in_past_message">The selected finish time is in the past.</string>
+    <string name="insufficient_time_message">Wash duration exceeds remaining time.</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="app_version_footer">Washing Machine Timer v%1$s</string>
+    <string name="settings_button_description">Open settings</string>
+    <string name="settings_dialog_title">Settings</string>
+    <string name="settings_language_label">Language</string>
+    <string name="settings_theme_label">Theme</string>
+    <string name="settings_language_system_default">System Default</string>
+    <string name="settings_theme_system_default">System Default</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+</resources>

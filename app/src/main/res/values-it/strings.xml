@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Timer Lavatrice</string>
+    <string name="current_time_label">Ora attuale:</string>
+    <string name="finish_time_label">Orario di fine desiderato:</string>
+    <string name="wash_duration_label">Imposta durata del lavaggio:</string>
+    <string name="start_time_label">Avvia lavatrice alle:</string>
+    <string name="hours_short_label">h</string>
+    <string name="minutes_short_label">min</string>
+    <string name="invalid_duration_message">Impostare una durata di lavaggio di almeno 1 minuto.</string>
+    <string name="finish_time_in_past_message">L\'orario di fine selezionato è nel passato.</string>
+    <string name="insufficient_time_message">La durata del lavaggio supera il tempo rimanente.</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Annulla</string>
+    <string name="app_version_footer">Timer Lavatrice v%1$s</string>
+    <string name="settings_button_description">Apri impostazioni</string>
+    <string name="settings_dialog_title">Impostazioni</string>
+    <string name="settings_language_label">Lingua</string>
+    <string name="settings_theme_label">Tema</string>
+    <string name="settings_language_system_default">Predefinito di sistema</string>
+    <string name="settings_theme_system_default">Predefinito di sistema</string>
+    <string name="settings_theme_light">Chiaro</string>
+    <string name="settings_theme_dark">Scuro</string>
+    <string name="tab_wash_calculator">Calcolatore lavaggio</string>
+    <string name="tab_wash_settings">Impostazioni lavaggio</string>
+    <string name="program_label">Programma di lavaggio:</string>
+    <string name="default_finish_time_label">Orario di fine preferito:</string>
+    <string name="default_program_label">Programma di lavaggio predefinito:</string>
+    <string name="smart_recommendations_label">Suggerimenti intelligenti</string>
+    <string name="smart_recommendations_description">Suggerisce un programma di lavaggio e una durata in base all\'orario di fine e alle impostazioni salvate.</string>
+    <string name="program_durations_label">Durate dei programmi di lavaggio:</string>
+    <string name="smart_recommendation_message">Suggerimento: %1$s con %2$s</string>
+    <string name="apply_recommendation_button">Usa suggerimento</string>
+    <string name="smart_recommendation_fits_finish_time">Rientra nel tempo restante prima dell\'orario di fine selezionato.</string>
+    <string name="smart_recommendation_time_is_tight">Sceglie il programma adatto più rapido perché la finestra di tempo è breve.</string>
+    <string name="smart_recommendation_matches_routine">Corrisponde alla tua routine di fine e al programma predefinito preferito.</string>
+    <string name="smart_recommendation_uses_time_well">Sfrutta bene il tempo disponibile senza essere troppo stretto.</string>
+    <string name="program_standard">Standard</string>
+    <string name="program_quick">Rapido</string>
+    <string name="program_eco">Eco</string>
+    <string name="program_cotton">Cotone</string>
+    <string name="program_delicates">Delicati</string>
+</resources>

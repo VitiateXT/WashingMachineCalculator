@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Timer Pralki</string>
+    <string name="current_time_label">Bieżąca godzina:</string>
+    <string name="finish_time_label">Żądana godzina zakończenia:</string>
+    <string name="wash_duration_label">Ustaw czas prania:</string>
+    <string name="start_time_label">Uruchom pralkę o:</string>
+    <string name="hours_short_label">h</string>
+    <string name="minutes_short_label">min</string>
+    <string name="invalid_duration_message">Ustaw czas prania na co najmniej 1 minutę.</string>
+    <string name="finish_time_in_past_message">Wybrana godzina zakończenia jest w przeszłości.</string>
+    <string name="insufficient_time_message">Czas prania przekracza pozostały czas.</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Anuluj</string>
+    <string name="app_version_footer">Timer Pralki v%1$s</string>
+    <string name="settings_button_description">Otwórz ustawienia</string>
+    <string name="settings_dialog_title">Ustawienia</string>
+    <string name="settings_language_label">Język</string>
+    <string name="settings_theme_label">Motyw</string>
+    <string name="settings_language_system_default">Domyślny systemu</string>
+    <string name="settings_theme_system_default">Domyślny systemu</string>
+    <string name="settings_theme_light">Jasny</string>
+    <string name="settings_theme_dark">Ciemny</string>
+    <string name="tab_wash_calculator">Kalkulator czasu prania</string>
+    <string name="tab_wash_settings">Ustawienia czasu prania</string>
+    <string name="program_label">Program prania:</string>
+    <string name="default_finish_time_label">Preferowana godzina zakończenia:</string>
+    <string name="default_program_label">Domyślny program prania:</string>
+    <string name="smart_recommendations_label">Inteligentne sugestie</string>
+    <string name="smart_recommendations_description">Sugeruje program prania i czas trwania na podstawie godziny zakończenia i zapisanych ustawień.</string>
+    <string name="program_durations_label">Czasy trwania programów:</string>
+    <string name="smart_recommendation_message">Sugestia: %1$s, %2$s</string>
+    <string name="apply_recommendation_button">Użyj sugestii</string>
+    <string name="smart_recommendation_fits_finish_time">Mieści się w czasie pozostałym do wybranej godziny zakończenia.</string>
+    <string name="smart_recommendation_time_is_tight">Wybiera najszybszy odpowiedni program, ponieważ okno czasowe jest krótkie.</string>
+    <string name="smart_recommendation_matches_routine">Pasuje do zapisanej rutyny kończenia i preferowanego programu domyślnego.</string>
+    <string name="smart_recommendation_uses_time_well">Dobrze wykorzystuje dostępny czas, nie robiąc się zbyt ciasno.</string>
+    <string name="program_standard">Standardowy</string>
+    <string name="program_quick">Szybki</string>
+    <string name="program_eco">Eco</string>
+    <string name="program_cotton">Bawełna</string>
+    <string name="program_delicates">Delikatne</string>
+</resources>

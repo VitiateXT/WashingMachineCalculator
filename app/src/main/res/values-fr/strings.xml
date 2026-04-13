@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minuterie Lave-linge</string>
+    <string name="current_time_label">Heure actuelle :</string>
+    <string name="finish_time_label">Heure de fin souhaitée :</string>
+    <string name="wash_duration_label">Durée de lavage :</string>
+    <string name="start_time_label">Démarrer le lave-linge à :</string>
+    <string name="hours_short_label">h</string>
+    <string name="minutes_short_label">min</string>
+    <string name="invalid_duration_message">Veuillez définir une durée de lavage d\'au moins 1 minute.</string>
+    <string name="finish_time_in_past_message">L\'heure de fin sélectionnée est dans le passé.</string>
+    <string name="insufficient_time_message">La durée de lavage dépasse le temps restant.</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="app_version_footer">Minuterie Lave-linge v%1$s</string>
+    <string name="settings_button_description">Ouvrir les paramètres</string>
+    <string name="settings_dialog_title">Paramètres</string>
+    <string name="settings_language_label">Langue</string>
+    <string name="settings_theme_label">Thème</string>
+    <string name="settings_language_system_default">Défaut système</string>
+    <string name="settings_theme_system_default">Défaut système</string>
+    <string name="settings_theme_light">Clair</string>
+    <string name="settings_theme_dark">Sombre</string>
+    <string name="tab_wash_calculator">Calculateur de lavage</string>
+    <string name="tab_wash_settings">Réglages de lavage</string>
+    <string name="program_label">Programme de lavage :</string>
+    <string name="default_finish_time_label">Heure de fin préférée :</string>
+    <string name="default_program_label">Programme de lavage par défaut :</string>
+    <string name="smart_recommendations_label">Suggestions intelligentes</string>
+    <string name="smart_recommendations_description">Suggère un programme de lavage et une durée en fonction de l\'heure de fin et des préférences enregistrées.</string>
+    <string name="program_durations_label">Durées des programmes :</string>
+    <string name="smart_recommendation_message">Suggestion : %1$s avec %2$s</string>
+    <string name="apply_recommendation_button">Utiliser la suggestion</string>
+    <string name="smart_recommendation_fits_finish_time">Tient dans le temps restant avant l\'heure de fin choisie.</string>
+    <string name="smart_recommendation_time_is_tight">Choisit le programme adapté le plus rapide car le créneau est court.</string>
+    <string name="smart_recommendation_matches_routine">Correspond à votre habitude d\'heure de fin et à votre programme par défaut préféré.</string>
+    <string name="smart_recommendation_uses_time_well">Utilise bien le temps disponible sans être trop juste.</string>
+    <string name="program_standard">Standard</string>
+    <string name="program_quick">Rapide</string>
+    <string name="program_eco">Eco</string>
+    <string name="program_cotton">Coton</string>
+    <string name="program_delicates">Délicat</string>
+</resources>

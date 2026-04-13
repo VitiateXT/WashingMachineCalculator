@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tvättmaskinstimer</string>
+    <string name="current_time_label">Aktuell tid:</string>
+    <string name="finish_time_label">Önskad sluttid:</string>
+    <string name="wash_duration_label">Ange tvättid:</string>
+    <string name="start_time_label">Starta tvättmaskinen:</string>
+    <string name="hours_short_label">h</string>
+    <string name="minutes_short_label">min</string>
+    <string name="invalid_duration_message">Ange en tvättid på minst 1 minut.</string>
+    <string name="finish_time_in_past_message">Den valda sluttiden har redan passerat.</string>
+    <string name="insufficient_time_message">Tvättiden överstiger återstående tid.</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Avbryt</string>
+    <string name="app_version_footer">Tvättmaskinstimer v%1$s</string>
+    <string name="settings_button_description">Öppna inställningar</string>
+    <string name="settings_dialog_title">Inställningar</string>
+    <string name="settings_language_label">Språk</string>
+    <string name="settings_theme_label">Tema</string>
+    <string name="settings_language_system_default">Systemstandard</string>
+    <string name="settings_theme_system_default">Systemstandard</string>
+    <string name="settings_theme_light">Ljust</string>
+    <string name="settings_theme_dark">Mörkt</string>
+    <string name="tab_wash_calculator">Tvättidsräknare</string>
+    <string name="tab_wash_settings">Tvättinställningar</string>
+    <string name="program_label">Tvättprogram:</string>
+    <string name="default_finish_time_label">Föredragen sluttid:</string>
+    <string name="default_program_label">Standardtvättprogram:</string>
+    <string name="smart_recommendations_label">Smarta förslag</string>
+    <string name="smart_recommendations_description">Föreslår ett tvättprogram och en varaktighet utifrån sluttiden och dina sparade standardval.</string>
+    <string name="program_durations_label">Programtider:</string>
+    <string name="smart_recommendation_message">Förslag: %1$s med %2$s</string>
+    <string name="apply_recommendation_button">Använd förslag</string>
+    <string name="smart_recommendation_fits_finish_time">Ryms inom den återstående tiden fram till den valda sluttiden.</string>
+    <string name="smart_recommendation_time_is_tight">Väljer det snabbaste passande programmet eftersom tidsfönstret är kort.</string>
+    <string name="smart_recommendation_matches_routine">Matchar din sparade slutrutin och ditt föredragna standardprogram.</string>
+    <string name="smart_recommendation_uses_time_well">Använder den tillgängliga tiden väl utan att bli för knapp.</string>
+    <string name="program_standard">Standard</string>
+    <string name="program_quick">Snabb</string>
+    <string name="program_eco">Eco</string>
+    <string name="program_cotton">Bomull</string>
+    <string name="program_delicates">Fintvätt</string>
+</resources>

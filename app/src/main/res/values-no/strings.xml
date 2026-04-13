@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vaskemaskintimer</string>
+    <string name="current_time_label">Gjeldende tid:</string>
+    <string name="finish_time_label">Ønsket sluttid:</string>
+    <string name="wash_duration_label">Angi vasketid:</string>
+    <string name="start_time_label">Start vaskemaskinen:</string>
+    <string name="hours_short_label">t</string>
+    <string name="minutes_short_label">min</string>
+    <string name="invalid_duration_message">Angi en vasketid på minst 1 minutt.</string>
+    <string name="finish_time_in_past_message">Den valgte sluttiden er i fortiden.</string>
+    <string name="insufficient_time_message">Vasketiden overskrider gjenværende tid.</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Avbryt</string>
+    <string name="app_version_footer">Vaskemaskintimer v%1$s</string>
+    <string name="settings_button_description">Åpne innstillinger</string>
+    <string name="settings_dialog_title">Innstillinger</string>
+    <string name="settings_language_label">Språk</string>
+    <string name="settings_theme_label">Tema</string>
+    <string name="settings_language_system_default">Systemstandard</string>
+    <string name="settings_theme_system_default">Systemstandard</string>
+    <string name="settings_theme_light">Lyst</string>
+    <string name="settings_theme_dark">Mørkt</string>
+    <string name="tab_wash_calculator">Vasketidskalkulator</string>
+    <string name="tab_wash_settings">Vaskeinnstillinger</string>
+    <string name="program_label">Vaskeprogram:</string>
+    <string name="default_finish_time_label">Foretrukket sluttid:</string>
+    <string name="default_program_label">Standard vaskeprogram:</string>
+    <string name="smart_recommendations_label">Smarte forslag</string>
+    <string name="smart_recommendations_description">Foreslår et vaskeprogram og en varighet basert på sluttiden og de lagrede standardvalgene.</string>
+    <string name="program_durations_label">Programvarigheter:</string>
+    <string name="smart_recommendation_message">Forslag: %1$s med %2$s</string>
+    <string name="apply_recommendation_button">Bruk forslag</string>
+    <string name="smart_recommendation_fits_finish_time">Passer innenfor tiden som er igjen før valgt sluttid.</string>
+    <string name="smart_recommendation_time_is_tight">Velger det raskeste passende programmet fordi tidsvinduet er kort.</string>
+    <string name="smart_recommendation_matches_routine">Matcher din lagrede sluttrutine og ditt foretrukne standardprogram.</string>
+    <string name="smart_recommendation_uses_time_well">Utnytter den tilgjengelige tiden godt uten å bli for knapp.</string>
+    <string name="program_standard">Standard</string>
+    <string name="program_quick">Hurtig</string>
+    <string name="program_eco">Eco</string>
+    <string name="program_cotton">Bomull</string>
+    <string name="program_delicates">Finvask</string>
+</resources>

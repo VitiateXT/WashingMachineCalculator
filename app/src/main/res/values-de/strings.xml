@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Waschzeitrechner</string>
+    <string name="current_time_label">Uhrzeit:</string>
+    <string name="finish_time_label">Gewünschte Endzeit:</string>
+    <string name="tab_wash_calculator">Waschzeitrechner</string>
+    <string name="tab_wash_settings">Waschzeiteinstellungen</string>
+    <string name="program_label">Waschprogramm:</string>
+    <string name="wash_duration_label">Waschdauer einstellen:</string>
+    <string name="default_finish_time_label">Bevorzugte Endzeit:</string>
+    <string name="default_program_label">Standard-Waschprogramm:</string>
+    <string name="smart_recommendations_label">Automatische Empfehlungen</string>
+    <string name="smart_recommendations_description">Schlägt anhand der Endzeit und deiner gespeicherten Standards ein passendes Waschprogramm und eine Dauer vor.</string>
+    <string name="program_durations_label">Waschprogrammdauern:</string>
+    <string name="smart_recommendation_message">Vorschlag: %1$s mit %2$s</string>
+    <string name="apply_recommendation_button">Vorschlag übernehmen</string>
+    <string name="smart_recommendation_fits_finish_time">Passt in die verbleibende Zeit bis zur gewählten Endzeit.</string>
+    <string name="smart_recommendation_time_is_tight">Wählt das schnellste passende Programm, weil das Zeitfenster kurz ist.</string>
+    <string name="smart_recommendation_matches_routine">Passt zu deiner gespeicherten Endzeit-Routine und dem bevorzugten Standardprogramm.</string>
+    <string name="smart_recommendation_uses_time_well">Nutzt die verfügbare Zeit sinnvoll, ohne zu knapp zu werden.</string>
+    <string name="start_time_label">Startzeit Waschprogramm:</string>
+    <string name="hours_short_label">Std.</string>
+    <string name="minutes_short_label">Min.</string>
+    <string name="program_standard">Standard</string>
+    <string name="program_quick">Kurz</string>
+    <string name="program_eco">Eco</string>
+    <string name="program_cotton">Baumwolle</string>
+    <string name="program_delicates">Feinwäsche</string>
+    <string name="invalid_duration_message">Bitte eine Waschdauer von mindestens 1 Minute einstellen.</string>
+    <string name="finish_time_in_past_message">Die gewählte Endzeit liegt in der Vergangenheit.</string>
+    <string name="insufficient_time_message">Waschdauer überschreitet verbleibende Zeit.</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="app_version_footer">Waschzeitrechner Ver. %1$s</string>
+    <string name="settings_button_description">Einstellungen öffnen</string>
+    <string name="settings_dialog_title">Einstellungen</string>
+    <string name="settings_language_label">Sprache</string>
+    <string name="settings_theme_label">Design</string>
+    <string name="settings_language_system_default">Systemstandard</string>
+    <string name="settings_theme_system_default">Systemstandard</string>
+    <string name="settings_theme_light">Hell</string>
+    <string name="settings_theme_dark">Dunkel</string>
+</resources>

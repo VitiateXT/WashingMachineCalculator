@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pesukoneajastin</string>
+    <string name="current_time_label">Nykyinen aika:</string>
+    <string name="finish_time_label">Haluttu valmistumisaika:</string>
+    <string name="wash_duration_label">Aseta pesuaika:</string>
+    <string name="start_time_label">Käynnistä pesukone:</string>
+    <string name="hours_short_label">t</string>
+    <string name="minutes_short_label">min</string>
+    <string name="invalid_duration_message">Aseta pesuaika vähintään 1 minuuttiin.</string>
+    <string name="finish_time_in_past_message">Valittu valmistumisaika on menneisyydessä.</string>
+    <string name="insufficient_time_message">Pesuaika ylittää jäljellä olevan ajan.</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Peruuta</string>
+    <string name="app_version_footer">Pesukoneajastin v%1$s</string>
+    <string name="settings_button_description">Avaa asetukset</string>
+    <string name="settings_dialog_title">Asetukset</string>
+    <string name="settings_language_label">Kieli</string>
+    <string name="settings_theme_label">Teema</string>
+    <string name="settings_language_system_default">Järjestelmän oletus</string>
+    <string name="settings_theme_system_default">Järjestelmän oletus</string>
+    <string name="settings_theme_light">Vaalea</string>
+    <string name="settings_theme_dark">Tumma</string>
+    <string name="tab_wash_calculator">Pesuajan laskuri</string>
+    <string name="tab_wash_settings">Pesuasetukset</string>
+    <string name="program_label">Pesuohjelma:</string>
+    <string name="default_finish_time_label">Ensisijainen valmistumisaika:</string>
+    <string name="default_program_label">Oletuspesuohjelma:</string>
+    <string name="smart_recommendations_label">Älykkäät ehdotukset</string>
+    <string name="smart_recommendations_description">Ehdottaa pesuohjelmaa ja kestoa valmistumisajan ja tallennettujen oletusten perusteella.</string>
+    <string name="program_durations_label">Pesuohjelmien kestot:</string>
+    <string name="smart_recommendation_message">Ehdotus: %1$s, %2$s</string>
+    <string name="apply_recommendation_button">Käytä ehdotusta</string>
+    <string name="smart_recommendation_fits_finish_time">Mahtuu valittuun valmistumisaikaan jäljellä olevaan aikaan.</string>
+    <string name="smart_recommendation_time_is_tight">Valitsee nopeimman sopivan ohjelman, koska aikaikkuna on lyhyt.</string>
+    <string name="smart_recommendation_matches_routine">Vastaa tallennettua valmistumisrutiiniasi ja oletusohjelmaasi.</string>
+    <string name="smart_recommendation_uses_time_well">Hyödyntää käytettävissä olevan ajan hyvin ilman että aikataulu käy liian tiukaksi.</string>
+    <string name="program_standard">Vakio</string>
+    <string name="program_quick">Nopea</string>
+    <string name="program_eco">Eco</string>
+    <string name="program_cotton">Puuvilla</string>
+    <string name="program_delicates">Hienopesu</string>
+</resources>
