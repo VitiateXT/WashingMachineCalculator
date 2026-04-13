@@ -10,6 +10,15 @@ private const val FINISH_TIME_ROUTINE_WINDOW_MINUTES = 90L
 private const val QUICK_WINDOW_MINUTES = 50L
 private const val TARGET_BUFFER_MINUTES = 15L
 
+/**
+ * A predefined wash program the user can pick from.
+ *
+ * @property storageKey Stable identifier used as a SharedPreferences key —
+ * must not change between releases or existing user preferences would be lost.
+ * @property labelResId String resource for the translated program name.
+ * @property defaultDurationMinutes Out-of-the-box duration when the user has
+ * never customised this program.
+ */
 enum class WashProgram(
     val storageKey: String,
     @StringRes val labelResId: Int,
@@ -25,22 +34,41 @@ enum class WashProgram(
         get() = "duration_${storageKey}"
 
     companion object {
+        /** Looks up a program by its [storageKey], falling back to [STANDARD]. */
         fun fromStorageKey(value: String?): WashProgram =
             entries.firstOrNull { it.storageKey == value } ?: STANDARD
     }
 }
 
+/**
+ * The user's preferred wall-clock finish time, used to pre-fill the
+ * finish-time picker.
+ */
 data class PreferredFinishTime(
     val hour: Int,
     val minute: Int
 )
 
+/**
+ * A smart suggestion for which program and duration to use, given the
+ * currently available time window.
+ *
+ * @property messageResId Short explanation shown to the user (e.g. "fits your
+ * finish time", "time is tight", "matches your routine").
+ */
 data class WashRecommendation(
     val program: WashProgram,
     val durationMinutes: Int,
     @StringRes val messageResId: Int
 )
 
+/**
+ * Pre-fills the finish-time picker when the screen first appears.
+ *
+ * If the user has set a [preferredFinishTime], returns that time today —
+ * or tomorrow when today's slot has already passed. Otherwise defaults to
+ * two hours from [now].
+ */
 fun calculateInitialFinishDateTime(
     now: LocalDateTime,
     preferredFinishTime: PreferredFinishTime?
@@ -62,14 +90,22 @@ fun calculateInitialFinishDateTime(
     return candidate
 }
 
+/** Splits a total minute count into a `(hours, minutes)` pair. */
 fun splitDurationMinutes(totalMinutes: Int): Pair<Int, Int> {
     val safeMinutes = totalMinutes.coerceAtLeast(0)
     return safeMinutes / 60 to safeMinutes % 60
 }
 
+/** Inverse of [splitDurationMinutes]: combines `hours` and `minutes` into total minutes. */
 fun composeDurationMinutes(hours: Int, minutes: Int): Int =
     hours.coerceAtLeast(0) * 60 + minutes.coerceIn(0, 59)
 
+/**
+ * True when a smart recommendation card should be displayed.
+ *
+ * The card is only shown when the feature is enabled, a recommendation exists,
+ * and it actually differs from the user's current selection.
+ */
 fun shouldShowSmartDurationRecommendation(
     smartRecommendationsEnabled: Boolean,
     currentProgram: WashProgram,
@@ -80,6 +116,19 @@ fun shouldShowSmartDurationRecommendation(
         recommendation != null &&
         (recommendation.program != currentProgram || recommendation.durationMinutes != currentDurationMinutes)
 
+/**
+ * Suggests a program/duration based on the time available until [finishDateTime].
+ *
+ * Selection strategy:
+ * - If the current duration no longer fits, pick the longest that does.
+ * - If very little time is left, pick the shortest available.
+ * - If the finish time matches the user's routine, prefer the default program.
+ * - Otherwise pick the option that uses the available time best (with a
+ *   small buffer).
+ *
+ * Returns `null` when no recommendation is worth showing — either nothing
+ * fits, or the best match equals what the user already selected.
+ */
 fun buildSmartRecommendation(
     now: LocalDateTime,
     finishDateTime: LocalDateTime,

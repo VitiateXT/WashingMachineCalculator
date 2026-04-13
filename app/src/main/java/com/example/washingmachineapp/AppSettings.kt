@@ -2,17 +2,32 @@ package de.moritz.waschzeitrechner
 
 import android.content.Context
 
+/** SharedPreferences file name used by [AppSettingsStore]. */
 const val SETTINGS_NAME = "wash_settings"
 
+/**
+ * User-selectable theme preference.
+ *
+ * [SYSTEM] follows the Android system setting; [LIGHT] and [DARK] pin the app
+ * to that mode regardless of system configuration.
+ */
 enum class ThemeMode {
     SYSTEM, LIGHT, DARK;
 
     companion object {
+        /** Parses [value] back into a [ThemeMode], falling back to [SYSTEM]. */
         fun fromString(value: String): ThemeMode =
             entries.firstOrNull { it.name == value } ?: SYSTEM
     }
 }
 
+/**
+ * A language the user can pick from the settings dialog.
+ *
+ * @property tag BCP-47 language tag (e.g. `"en"`, `"zh-Hans"`). Empty string
+ * means "follow the system default".
+ * @property nativeName Human-readable name in that language, shown in the UI.
+ */
 data class SupportedLanguage(
     val tag: String,
     val nativeName: String
@@ -40,6 +55,12 @@ val SupportedLanguages: List<SupportedLanguage> = listOf(
     SupportedLanguage("fi", "Suomi")
 )
 
+/**
+ * Persistent user settings backed by [android.content.SharedPreferences].
+ *
+ * Stores the chosen theme, default wash program, per-program durations, the
+ * preferred finish time, and the smart-recommendations toggle.
+ */
 class AppSettingsStore(context: Context) {
     private val prefs = context.getSharedPreferences(SETTINGS_NAME, Context.MODE_PRIVATE)
 

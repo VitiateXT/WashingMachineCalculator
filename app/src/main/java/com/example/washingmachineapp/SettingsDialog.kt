@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.os.LocaleListCompat
 
+/** Floating action button in the bottom-right corner that opens the settings dialog. */
 @Composable
 fun SettingsFab(
     onClick: () -> Unit,
@@ -46,6 +47,13 @@ fun SettingsFab(
     }
 }
 
+/**
+ * Modal dialog for quickly switching the app language and theme.
+ *
+ * The theme change is applied immediately via [onThemeModeChange]; the
+ * language selection is only committed when the user presses the confirm
+ * button, since switching locales recreates the activity.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsDialog(

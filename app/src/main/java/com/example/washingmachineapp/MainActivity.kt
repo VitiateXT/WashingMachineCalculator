@@ -71,6 +71,13 @@ private val WashProgramSaver = Saver<WashProgram, String>(
     restore = { WashProgram.fromStorageKey(it) }
 )
 
+/**
+ * Single-activity host for the whole app.
+ *
+ * Extends [AppCompatActivity] (rather than `ComponentActivity`) so per-app
+ * locale switching via `AppCompatDelegate.setApplicationLocales` works. The
+ * entire UI is declared with Jetpack Compose inside [AppScaffold].
+ */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -101,6 +108,10 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+/**
+ * Top-level UI: app bar, tabs (calculator / preferences), and the floating
+ * settings button that opens [SettingsDialog].
+ */
 @Composable
 fun AppScaffold(
     themeMode: ThemeMode,
@@ -176,6 +187,15 @@ fun AppScaffold(
     }
 }
 
+/**
+ * Main calculator screen.
+ *
+ * The user picks a finish date/time, a program, and an adjusted duration;
+ * the screen continuously recomputes the start time via
+ * [WashScheduleCalculator.calculate] and optionally shows a smart
+ * recommendation. [settingsVersion] is a bump-counter that forces a
+ * re-read of persisted settings when the preferences tab edits them.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun WaschzeitrechnerScreen(
@@ -405,6 +425,11 @@ fun WaschzeitrechnerScreen(
     }
 }
 
+/**
+ * Preferences screen: default finish time, default program, per-program
+ * durations, and the smart-recommendations toggle. [onSettingsChanged] is
+ * invoked after every edit so the calculator screen re-reads persisted values.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun WaschzeiteinstellungenScreen(

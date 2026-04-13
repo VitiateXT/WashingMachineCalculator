@@ -1,36 +1,37 @@
-# WashingMachineApp
+# Waschzeitrechner (Washing Machine Calculator)
 
-Android app for calculating the best start time for a washing program based on a desired finish time and wash duration.
+A small Android app that works out **when to start** a washing cycle so it finishes at exactly the time you want it to.
 
-## Project Notes
+Tell the app when you'd like the laundry to be done and how long your chosen program takes — it calculates the delay-start time for you. Ideal for timing a load to finish right before you get home, or as you wake up.
 
-- UI is built with Kotlin and Jetpack Compose.
-- Core scheduling logic is extracted into a testable calculator.
-- Local release packaging is handled by `build_release.sh`.
-- Project review, validation, and release notes are stored in `.knowledge/`.
+## Features
 
-## Useful Files
+- **Finish-time-first planning** — pick the finish time, the app tells you when to press start.
+- **Built-in wash programs** — Standard, Quick, Eco, Cotton, and Delicates, each with an editable default duration.
+- **Smart recommendations** (opt-in) — suggests a better program/duration based on how much time is available and your routine.
+- **Persistent preferences** — default program, default finish time, and per-program durations are remembered.
+- **Light / dark / system themes.**
+- **18 languages** including English, German, French, Spanish, Japanese, Arabic, and more.
+- **Fully offline** — no network permission, no tracking, no accounts.
 
-- `app/src/main/java/com/example/washingmachineapp/MainActivity.kt`
-- `app/src/main/java/com/example/washingmachineapp/WashScheduleCalculator.kt`
-- `app/src/test/java/com/example/washingmachineapp/WashScheduleCalculatorTest.kt`
-- `app/build.gradle.kts`
-- `build_release.sh`
-- `.knowledge/release-guide.md`
+## Screenshots
 
-## Build
+Screenshots to be added.
 
-```bash
-./gradlew testDebugUnitTest assembleDebug
-```
+## Installation
 
-## Signed Release Build
+Download the latest `app-release.apk` from the [Releases page](../../releases) and install it on your Android device. You may need to enable installation from unknown sources.
 
-```bash
-./build_release.sh
-```
+**Requires:** Android 8.0 (API 26) or higher.
 
-## Important Before Play Release
+## Tech Stack
 
-- Replace the placeholder package name `com.example.washingmachineapp` with the final production application ID before the first public release.
-- Upload the generated AAB to Google Play, not the APK.
+- **Kotlin** with **Jetpack Compose** for the UI
+- **Material 3** design system
+- **AndroidX AppCompat** for per-app locale switching
+- **SharedPreferences** for local persistence
+- Pure-Kotlin, framework-free scheduling logic unit-tested with `kotlin.test`
+
+## License
+
+Released under the [MIT License](LICENSE).
