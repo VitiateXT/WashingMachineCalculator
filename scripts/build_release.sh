@@ -6,6 +6,8 @@
 
 set -euo pipefail
 
+cd "$(dirname "$0")/.."
+
 KEYSTORE_PATH="my-release-key.keystore"
 KEY_ALIAS="${KEY_ALIAS:-wash-app-key}"
 

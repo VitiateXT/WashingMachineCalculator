@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+cd "$(dirname "$0")/.."
+
 APK="app/build/outputs/apk/debug/app-debug.apk"
 PACKAGE="de.moritz.waschzeitrechner"
 ACTIVITY=".MainActivity"
