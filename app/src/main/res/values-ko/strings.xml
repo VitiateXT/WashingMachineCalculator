@@ -40,4 +40,5 @@
     <string name="program_eco">에코</string>
     <string name="program_cotton">면</string>
     <string name="program_delicates">섬세</string>
+    <string name="program_manual">수동</string>
 </resources>

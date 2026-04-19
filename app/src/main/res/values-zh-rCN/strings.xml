@@ -40,4 +40,5 @@
     <string name="program_eco">节能</string>
     <string name="program_cotton">棉织物</string>
     <string name="program_delicates">轻柔</string>
+    <string name="program_manual">手动</string>
 </resources>

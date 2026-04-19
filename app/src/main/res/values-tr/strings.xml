@@ -40,4 +40,5 @@
     <string name="program_eco">Eko</string>
     <string name="program_cotton">Pamuklu</string>
     <string name="program_delicates">Hassas</string>
+    <string name="program_manual">Manuel</string>
 </resources>

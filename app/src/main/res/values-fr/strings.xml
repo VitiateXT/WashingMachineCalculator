@@ -40,4 +40,5 @@
     <string name="program_eco">Eco</string>
     <string name="program_cotton">Coton</string>
     <string name="program_delicates">Délicat</string>
+    <string name="program_manual">Manuel</string>
 </resources>

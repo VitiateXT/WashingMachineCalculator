@@ -26,6 +26,7 @@
     <string name="program_eco">Eco</string>
     <string name="program_cotton">Cotton</string>
     <string name="program_delicates">Delicates</string>
+    <string name="program_manual">Manual</string>
     <string name="invalid_duration_message">Please set a wash duration of at least 1 minute.</string>
     <string name="finish_time_in_past_message">The selected finish time is in the past.</string>
     <string name="insufficient_time_message">Wash duration exceeds remaining time.</string>

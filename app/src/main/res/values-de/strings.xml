@@ -26,6 +26,7 @@
     <string name="program_eco">Eco</string>
     <string name="program_cotton">Baumwolle</string>
     <string name="program_delicates">Feinwäsche</string>
+    <string name="program_manual">Manuell</string>
     <string name="invalid_duration_message">Bitte eine Waschdauer von mindestens 1 Minute einstellen.</string>
     <string name="finish_time_in_past_message">Die gewählte Endzeit liegt in der Vergangenheit.</string>
     <string name="insufficient_time_message">Waschdauer überschreitet verbleibende Zeit.</string>

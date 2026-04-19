@@ -66,9 +66,9 @@ private val LocalDateTimeSaver = Saver<LocalDateTime, String>(
     restore = { LocalDateTime.parse(it) }
 )
 
-private val WashProgramSaver = Saver<WashProgram, String>(
-    save = { it.storageKey },
-    restore = { WashProgram.fromStorageKey(it) }
+private val WashProgramSaver = Saver<WashProgram?, String>(
+    save = { it?.storageKey ?: "" },
+    restore = { key -> if (key.isEmpty()) null else WashProgram.fromStorageKey(key) }
 )
 
 /**
@@ -236,7 +236,7 @@ fun WaschzeitrechnerScreen(
     }
     var showDatePicker by remember { mutableStateOf(false) }
     var showTimePicker by remember { mutableStateOf(false) }
-    var selectedProgram by rememberSaveable(stateSaver = WashProgramSaver) { mutableStateOf(initialProgram) }
+    var selectedProgram by rememberSaveable(stateSaver = WashProgramSaver) { mutableStateOf<WashProgram?>(initialProgram) }
     var washHours by rememberSaveable { mutableIntStateOf(initialDurationParts.first) }
     var washMinutes by rememberSaveable { mutableIntStateOf(initialDurationParts.second) }
 
@@ -250,15 +250,18 @@ fun WaschzeitrechnerScreen(
         savedPreferredFinishTime,
         savedProgramDurations
     ) {
-        buildSmartRecommendation(
-            now = now,
-            finishDateTime = finishDateTime,
-            currentProgram = selectedProgram,
-            currentDurationMinutes = currentDurationMinutes,
-            defaultProgram = savedDefaultProgram,
-            preferredFinishTime = savedPreferredFinishTime,
-            programDurations = savedProgramDurations
-        )
+        val program = selectedProgram
+        if (program != null) {
+            buildSmartRecommendation(
+                now = now,
+                finishDateTime = finishDateTime,
+                currentProgram = program,
+                currentDurationMinutes = currentDurationMinutes,
+                defaultProgram = savedDefaultProgram,
+                preferredFinishTime = savedPreferredFinishTime,
+                programDurations = savedProgramDurations
+            )
+        } else null
     }
 
     val schedule = remember(now, finishDateTime, currentDurationMinutes) {
@@ -359,33 +362,38 @@ fun WaschzeitrechnerScreen(
                 selectedProgram = selectedProgram,
                 onProgramSelected = { program ->
                     selectedProgram = program
-                    val durationParts = splitDurationMinutes(
-                        settingsStore.getProgramDurationMinutes(program)
-                    )
-                    washHours = durationParts.first
-                    washMinutes = durationParts.second
-                }
+                    if (program != null) {
+                        val durationParts = splitDurationMinutes(
+                            settingsStore.getProgramDurationMinutes(program)
+                        )
+                        washHours = durationParts.first
+                        washMinutes = durationParts.second
+                    }
+                },
+                allowNone = true
             )
 
-            Text(text = stringResource(R.string.wash_duration_label), fontSize = 14.sp)
-            Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                TimeDropdown(
-                    label = hoursShortLabel,
-                    value = washHours,
-                    range = 0..5,
-                    onValueChange = { updatedHours -> washHours = updatedHours }
-                )
-                TimeDropdown(
-                    label = minutesShortLabel,
-                    value = washMinutes,
-                    range = 0..59,
-                    onValueChange = { updatedMinutes -> washMinutes = updatedMinutes }
-                )
+            if (selectedProgram == null) {
+                Text(text = stringResource(R.string.wash_duration_label), fontSize = 14.sp)
+                Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                    TimeDropdown(
+                        label = hoursShortLabel,
+                        value = washHours,
+                        range = 0..5,
+                        onValueChange = { updatedHours -> washHours = updatedHours }
+                    )
+                    TimeDropdown(
+                        label = minutesShortLabel,
+                        value = washMinutes,
+                        range = 0..59,
+                        onValueChange = { updatedMinutes -> washMinutes = updatedMinutes }
+                    )
+                }
             }
 
-            if (shouldShowSmartDurationRecommendation(
+            if (selectedProgram != null && shouldShowSmartDurationRecommendation(
                     smartRecommendationsEnabled = smartRecommendationsEnabled,
-                    currentProgram = selectedProgram,
+                    currentProgram = selectedProgram!!,
                     currentDurationMinutes = currentDurationMinutes,
                     recommendation = recommendation
                 )) {
@@ -509,7 +517,7 @@ fun WaschzeiteinstellungenScreen(
             ProgramDropdown(
                 selectedProgram = defaultProgram,
                 onProgramSelected = { program ->
-                    defaultProgram = program
+                    defaultProgram = program!!
                     settingsStore.setDefaultProgram(program)
                     onSettingsChanged()
                 }
@@ -677,10 +685,17 @@ fun TimeDropdown(
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ProgramDropdown(
-    selectedProgram: WashProgram,
-    onProgramSelected: (WashProgram) -> Unit
+    selectedProgram: WashProgram?,
+    onProgramSelected: (WashProgram?) -> Unit,
+    allowNone: Boolean = false
 ) {
     var expanded by remember { mutableStateOf(false) }
+
+    val displayText = if (selectedProgram != null) {
+        stringResource(selectedProgram.labelResId)
+    } else {
+        stringResource(R.string.program_manual)
+    }
 
     ExposedDropdownMenuBox(
         expanded = expanded,
@@ -688,7 +703,7 @@ fun ProgramDropdown(
         modifier = Modifier.width(260.dp)
     ) {
         TextField(
-            value = stringResource(selectedProgram.labelResId),
+            value = displayText,
             onValueChange = {},
             readOnly = true,
             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
@@ -698,6 +713,15 @@ fun ProgramDropdown(
             expanded = expanded,
             onDismissRequest = { expanded = false }
         ) {
+            if (allowNone) {
+                DropdownMenuItem(
+                    text = { Text(stringResource(R.string.program_manual)) },
+                    onClick = {
+                        expanded = false
+                        onProgramSelected(null)
+                    }
+                )
+            }
             WashProgram.entries.forEach { program ->
                 DropdownMenuItem(
                     text = { Text(stringResource(program.labelResId)) },

@@ -40,4 +40,5 @@
     <string name="program_eco">Eco</string>
     <string name="program_cotton">Puuvilla</string>
     <string name="program_delicates">Hienopesu</string>
+    <string name="program_manual">Manuaalinen</string>
 </resources>

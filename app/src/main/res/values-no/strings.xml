@@ -40,4 +40,5 @@
     <string name="program_eco">Eco</string>
     <string name="program_cotton">Bomull</string>
     <string name="program_delicates">Finvask</string>
+    <string name="program_manual">Manuell</string>
 </resources>

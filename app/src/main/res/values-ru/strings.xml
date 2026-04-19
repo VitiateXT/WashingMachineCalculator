@@ -40,4 +40,5 @@
     <string name="program_eco">Эко</string>
     <string name="program_cotton">Хлопок</string>
     <string name="program_delicates">Деликатная</string>
+    <string name="program_manual">Вручную</string>
 </resources>

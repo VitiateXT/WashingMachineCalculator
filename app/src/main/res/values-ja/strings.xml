@@ -40,4 +40,5 @@
     <string name="program_eco">エコ</string>
     <string name="program_cotton">綿</string>
     <string name="program_delicates">デリケート</string>
+    <string name="program_manual">手動</string>
 </resources>
